@@ -1,0 +1,100 @@
+<htm>
+  <head>
+    <title>Exercicios</title>
+    <style>
+      .btnBox {
+        display: flex;
+        flex-direction: center;
+        justify-content: center;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercicios</h1>
+    <table border="3" align="center" width="100%" cellspacing="0">
+      <thead>
+        <tr bgcolor="darkcyan">
+          <th>Exercicio</th>
+          <th>Descrição</th>
+          <th>Teste</th>
+        </tr>
+      </thead>
+      <tbody bgcolor="lightblue" align="center">
+        <tr>
+          <td>Banco</td>
+          <td>Exemplo de caixa eletronico</td>
+          <td><button onclick="menuAcao()">menu banco</button></td>
+        </tr>
+        <tr>
+          <td>Votação</td>
+          <td>Verifica se você é deve votar de acordo com sua idade</td>
+          <td><button onclick="idade()">menu idade</button></td>
+        </tr>
+        <tr>
+          <td>Media</td>
+          <td>Exemplo de calculadora de media escolar</td>
+          <td><button onclick="calcularMedia()">menu media</button></td>
+        </tr>
+        <tr>
+          <td>Ordenador Numerico</td>
+          <td>Lê tres numeros e os apresenta em ordem numerica</td>
+          <td><button onclick="ordenarNumeros()">menu ordenador</button></td>
+        </tr>
+        <tr>
+          <td>Verificador de vogal e consoante</td>
+          <td>Verifica se letra digitada é uma vogal ou uma consoante</td>
+          <td><button onclick="verificarLetra()">menu verificador</button></td>
+        </tr>
+        <tr>
+          <td>Contador de 1 a 20</td>
+          <td>Imprime no console os numeros de 1 a 20</td>
+          <td><button onclick="contador()">menu contador</button></td>
+        </tr>
+        <tr>
+          <td>Contador de 20 a 1</td>
+          <td>Imprime no console os numeros de 20 ao 1</td>
+          <td><button onclick="contadorReverso()">menu contador</button></td>
+        </tr>
+        <tr>
+          <td>Ordenar array</td>
+          <td>Ordena numericamente os itens inseridos</td>
+          <td><button onclick="mostrarSequencia()">menu sequencia</button></td>
+        </tr>
+        <tr>
+          <td>Ordenar três numeros</td>
+          <td>Ordena numericamente os itens inseridos</td>
+          <td><button onclick="ordenarTresNumeros()">menu ordem</button></td>
+        </tr>
+        <tr>
+          <td>Perfil</td>
+          <td>mostra perfil no log</td>
+          <td><button onclick="perfilShow()">menu perfil</button></td>
+        </tr>
+        <tr>
+          <td>Cor de Fundo</td>
+          <td>Muda a cor de fundo da página</td>
+          <td>
+            <input type="color" class="corEscolhida" /><button
+              onclick="alterarCor()"
+            >
+              Alterar cor
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Contador</td>
+          <td>soma e subtrai numeros</td>
+          <td>
+            <div class="btnBox">
+            <button class="btn" onclick="clickMenos()">-</button>
+            <p class="contador"></p>
+            <button class="btn" onclick="clickMais()">+</button>
+        </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</htm>

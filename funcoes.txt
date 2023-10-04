@@ -1,0 +1,29 @@
+funcao saldo(conta){
+    se a conta existe
+        mostrar saldo
+    se nao existe
+        fechar programa
+}
+
+funcao deposito(valor, conta, destino){
+    saldoAtual = saldo(conta)
+         se valor > 0
+            se destino existe
+                 saldoAtual = saldoAtual + valor
+                saldo(conta)
+            se destino nao existe
+                fecha programa 
+        se valor menor ou igual a zero
+            fecha programa
+}
+
+funcao saque(conta, valor){
+    se conta existe
+        se saldo(conta) - valor > zero
+            mostre saldo(conta) - valor
+            saldo(conta)
+        se nao
+            fecha programa
+    se conta nao existe 
+        fecha o programa
+}
